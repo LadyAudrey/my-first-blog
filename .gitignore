@@ -1,8 +1,9 @@
 # Python
-#.pyc
+*.pyc
 #~
 
 __pycache__
+.idea
 
 # Env
 .env
