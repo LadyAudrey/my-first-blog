@@ -8,16 +8,17 @@
             <h1><a href="/">Audreys' Blog</a></h1>
         </header>
 
-        <article>
-            <time>published: 09.07.2022, 12:14</time>
-            <h2><a href="">My first post</a></h2>
-            <p>Learning is fun and learning how to learn is life changing.</p>
-        </article>
+        {% for post in posts %}
+            <article>
+                <time>published: 11.07.2022, 12:14</time>
+                <h2><a href="">My first post</a></h2>
+                <p>Learning is fun and learning how to learn is life changing.</p>
+            </article>
+            {% endfor %}
 
-        <article>
-            <time>published: 14.06.2014, 12:14</time>
+            <time>published: 11.07.2022, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>I wish I'd spent my young adult life learning how to do things instead of assuming I was just bad at them.</p>
-        </article>
+        </>
     </body>
 </html>
