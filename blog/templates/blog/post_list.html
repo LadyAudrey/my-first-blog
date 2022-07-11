@@ -9,12 +9,12 @@
         </header>
 
         {% for post in posts %}
-            <article>
-                <time>published: 11.07.2022, 12:14</time>
-                <h2><a href="">My first post</a></h2>
-                <p>Learning is fun and learning how to learn is life changing.</p>
+           <article>
+                <time>published: {{ post.published_date}}
+                <h2><a href="">{{ post.title }}</a></h2>
+               <p>{{ post.text|linebreaksbr }}</p>
             </article>
-            {% endfor %}
+        {% endfor %}
 
             <time>published: 11.07.2022, 12:14</time>
             <h2><a href="">My second post</a></h2>
