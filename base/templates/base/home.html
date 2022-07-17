@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Home Template</h1>
+
+<div>
+    <div>
+        {% for blog in blogs %}
+            <div>
+                <h5>{{blogs.id}} -- </a href="/room/{{blog.id}}">{{blog.name}}</a></h5>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
