@@ -8,7 +8,7 @@ blogs = [
 
 def home(request):
     context = {'blogs': blogs}
-    return render(request, 'base/home.html', context)
+    return render(request, 'pages/home.html', context)
 
 def blog(request, pk):
     room = None
@@ -16,4 +16,4 @@ def blog(request, pk):
         if i['id'] == int(pk):
             room = i
     context = {'blog':blog}
-    return render(request, 'base/blog.html', context)
+    return render(request, 'pages/blog.html', context)
