@@ -1,16 +1,1 @@
-{% extends 'main.html' %}
-
-{% block content %}
 <h1>Homepage</h1>
-
-<div>
-    <div>
-        {% for blog in blogs %}
-            <div>
-                <h5>{{blogs.id}} -- </a href="/blog/{{blog.id}}">{{blog.name}}</a></h5>
-            </div>
-        {% endfor %}
-    </div>
-</div>
-
-{% endblock content %}
