@@ -1,2 +1,2 @@
 # Necessary for gunicorn/ heroku deployment
-python-3.10.4
+python-3.10.6
