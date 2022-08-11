@@ -1,0 +1,5 @@
+# added manually bc the Python for Beginners book said they should be in here
+django
+gunicorn
+asgiref
+sqlparse
