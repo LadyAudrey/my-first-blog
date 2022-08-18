@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'pages.apps.PagesConfig',
-    #'posts.apps.PostsConfig',
+    'pages.apps.PagesConfig',
+    'posts.apps.PostsConfig',
     'blogs.apps.BlogsConfig',
 ]
 
@@ -122,7 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+#STATIC_ROOT = BASE_DIR / 'static' (commented out because of "ERRORS:
+#?: (staticfiles.E002) The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting.""
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
