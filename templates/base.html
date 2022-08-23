@@ -4,19 +4,21 @@
 <html>
   <head>
     <title>Django blog</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylsheet">
   </head>
 <body>
-<div class = "nav-right">
-    <h1><a> href="{% url 'home' %}" Django blog </a></h1>
+<div>
+  <header>
+    <div  class = "nav-left">
+   <h1><a> href="{% url 'home' %}" Django blog </a></h1>
+   </div>
+    <div  class = "nav-right">
+      <a href="{% url 'post_new' %}">+ New Blog</a>-->
     </div>
-      <a href="{% url 'post_new' %}">+ New Blog</a>
-    <div>
-      </header>
-  {% block content %}
-  {% endblock content %}
+     </header>
+ {% block content %}-->
+     {% endblock content %}-->
 
 </div>
 </body>
